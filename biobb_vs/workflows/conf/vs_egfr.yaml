@@ -1,0 +1,113 @@
+######################## pymdsetup configuration file ########################
+
+########################## System dependent paths ############################
+linux:
+  gmx_path: /usr/local/gromacs/bin/gmx
+  scwrl4_path: /home/pau/soft/scwrl4/Scwrl4
+  workflow_path: /home/pau/projects/virtualscreening/testvs
+  gnuplot_path: /usr/bin/gnuplot
+  mgltools_path: /home/pau/soft/mgltools_x86_64Linux2_1.5.6
+  vina_path: vina
+  decoys_sdf_path: /home/pau/projects/virtualscreening/test/data/decoys_final.sdf
+  actives_dir_path: /home/pau/projects/virtualscreening/test/data/ligands
+  receptors_pdb_path: /home/pau/projects/virtualscreening/test/data/cluster.pdb
+  max_ligands: 3
+  max_receptors: 2
+  # Path to the initial pdb structure (if this field is empty
+  # pdb_code field will be used to download the structure)
+#  initial_structure_pdb_path: /home/pau/projects/pymdsetup/test/data/2VGB.WT.pdb
+  #initial_structure_pdb_path: /home/pau/projects/pymdsetup/test/data/PK_Gromacs_Setup.pdb
+
+macos:
+  gmx_path: /usr/local/gromacs/bin/gmx
+  scwrl4_path: /Users/pau/soft/scwrl4/Scwrl4
+  workflow_path: /Users/pau/projects/virtualscreening/testvs_egfr
+  mgltools_path: /anaconda3/envs/vs/
+  vina_path: vina
+  #              decoys_sdf_path: /Users/pau/projects/virtualscreening/test/data/decoys_final.sdf
+  actives_dir_path: /Users/pau/projects/virtualscreening/test/data/EGFR/egfr_actives
+  receptors_pdb_path: /Users/pau/projects/virtualscreening/test/data/EGFR/clusters/Leu149Val_cluster.pdb
+  max_ligands: 100000
+  max_receptors: 100000
+
+  # Path to the initial pdb structure (if this field is empty
+  # pdb_code field will be used to download the structure)
+  #initial_structure_pdb_path: /Users/pau/Desktop/structure.pdb
+
+
+##############################################################################
+
+# List of coma separated mutations (if this field is empty
+# pdb_code field will be used to download the list).
+# Format example:  A.Lys58Glu, A.Thr74Ala
+#input_mapped_mutations_list: "*.Thr371Ile"
+#input_mapped_mutations_list: A.Lys58Glu, A.Thr74Ala, A.Ser1Thr, A.Glu2Asp, A.Ala3Val, A.Glu4Asp, A.Asp5Glu, A.Ala6Val, A.Ser7Thr, A.Leu8Ile, A.Leu9Ile, A.Ser10Thr, A.Phe11Ile, A.Met12Leu, A.Gln13Arg, A.Gly14Ala, A.Tyr15Phe, A.Met16Leu, A.Lys17Arg, A.His18Asn, A.Ala19Ser, A.Thr20Ser, A.Lys21Arg, A.Thr22Ser, A.Ala23Ser, A.Lys24Arg, A.Asp25Glu, A.Ala26Ser, A.Leu27Ile, A.Ser28Ala, A.Ser29Ala, A.Val30Met
+
+########################## Step paths & properties ##########################
+# Step 1: mmbpdb -- Get PDB
+step1_mmbpdb:
+  paths:
+    output_pdb_path: structure.pdb
+  properties:
+    pdb_code: 2GS2
+    pdb_chain: A
+
+dude:
+  paths:
+    output_sdf_path: decoys.sdf
+  properties:
+    pdb_code: 2GS2
+
+sdf2pdb:
+  paths:
+    input_sdf_path: dependency/dude/output_sdf_path
+  properties:
+    max_pdbs: 1000000
+
+md_clustering:
+  paths:
+    workflow_path: ''
+  properties:
+    yaml_path: /home/pau/projects/virtualscreening/workflows/conf/md_cluster.yaml
+    system: linux
+
+bindingsite:
+  paths:
+    output_pdb_path: bindingsite.pdb
+  properties:
+    pdb_code: 2GS2
+    pdb_chain: A 
+    #ligand: PGA
+    radius: 5
+    identity_cluster: 90
+    max_num_ligands: 15
+    matrix_name: blosum62
+    gap_open: -10.0
+    gap_extend: -0.5
+    trim_ends: True
+
+box:
+  paths:
+    resid_pdb_path: dependency/bindingsite/output_pdb_path
+    output_pdb_path: box.pdb
+  properties:
+    offset: 2
+
+prepare_receptor:
+  paths:
+    output_receptor_pdbqt_path: receptor.pdbqt
+  properties:
+
+prepare_ligand:
+  paths:
+    output_ligand_pdbqt_path: ligand.pdbqt
+  properties:
+
+vina:
+  paths:
+    ligand_pdbqt_path: dependency/prepare_ligand/output_ligand_pdbqt_path
+    receptor_pdbqt_path:  dependency/prepare_receptor/output_receptor_pdbqt_path
+    box_path: dependency/box/output_pdb_path
+    log_file: out_log
+    output_path: out
+  properties:

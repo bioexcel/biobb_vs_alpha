@@ -1,0 +1,162 @@
+MODEL 1
+REMARK VINA RESULT:      -4.1      0.000      0.000
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581      13.267   4.233   0.468  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581      14.565   3.587   1.144  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581      14.128   2.519   2.104  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581      15.298   4.646   1.908  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581      15.457   2.986   0.091  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      13.221   5.608   0.205  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      11.889   5.868  -0.423  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      11.810   6.102  -1.638  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      10.857   5.855   0.258  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -3.9      3.283      4.270
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581      11.993   7.631  -0.239  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581      11.146   6.668   0.717  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581      11.739   5.290   0.662  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581       9.735   6.602   0.218  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581      11.180   7.176   2.133  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      11.373   8.277  -1.316  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      11.494   7.352  -2.484  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      12.531   6.693  -2.650  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      10.566   7.234  -3.293  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -3.8      3.037      4.208
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581      10.178   6.281   0.320  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581      11.688   6.192  -0.201  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581      12.307   4.932   0.328  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581      12.458   7.363   0.327  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581      11.719   6.177  -1.706  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581       9.477   7.491   0.243  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581       8.035   7.129   0.078  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581       7.215   7.990  -0.273  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581       7.647   5.974   0.290  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -3.8      1.918      4.455
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581      12.974   5.468   0.314  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581      11.870   6.426  -0.335  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581      11.841   6.196  -1.817  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581      12.248   7.852  -0.078  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581      10.515   6.129   0.249  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      14.322   5.604  -0.044  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      15.058   4.522   0.680  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      15.333   4.654   1.881  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      15.399   3.489   0.091  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -3.8      3.193      4.501
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581      12.026   7.650   0.524  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581      11.374   6.311  -0.062  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581       9.885   6.383   0.114  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581      11.892   5.137   0.710  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581      11.704   6.168  -1.523  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      11.276   8.493   1.354  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      11.432   7.960   2.742  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      10.475   7.413   3.309  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      12.511   8.059   3.338  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -3.7      5.506      7.096
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581       8.014   7.225   1.695  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581       8.741   7.387   0.279  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581       9.157   8.819   0.111  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581       7.775   7.037  -0.810  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581       9.953   6.497   0.211  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581       6.773   7.833   1.922  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581       5.808   6.725   2.195  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581       6.195   5.547   2.181  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581       4.620   6.968   2.436  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -3.7      4.684      5.840
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581       9.620   7.689  -0.999  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581       8.707   7.527   0.304  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581       9.590   7.542   1.517  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581       7.998   6.209   0.244  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581       7.714   8.655   0.388  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      11.014   7.589  -0.899  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      11.511   7.287  -2.277  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      12.723   7.114  -2.476  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      10.724   7.208  -3.227  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -3.7      5.819      7.800
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581       6.649   8.440   1.173  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581       6.149   7.803   2.553  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581       7.328   7.201   3.260  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581       5.160   6.717   2.260  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581       5.526   8.863   3.420  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581       8.012   8.442   0.851  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581       8.252   7.210   0.038  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581       7.448   6.885  -0.848  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581       9.247   6.505   0.240  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -3.7      3.443      5.853
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O1P_2 
+REMARK    2  A    between atoms: O1P_2  and  C2_6 
+REMARK    3  A    between atoms: C2_6  and  C1_7 
+HETATM    1  O1P PGA A 581       9.506   6.423   0.308  1.00107.06    -0.272 OA
+HETATM    2  P   PGA A 581       8.160   7.287   0.364  1.00104.89     0.422 P 
+HETATM    3  O2P PGA A 581       7.315   6.940  -0.827  1.00106.30    -0.617 OA
+HETATM    4  O3P PGA A 581       8.510   8.741   0.297  1.00106.94    -0.617 OA
+HETATM    5  O4P PGA A 581       7.401   6.986   1.628  1.00106.47    -0.617 OA
+HETATM    6  C2  PGA A 581      10.749   7.062   0.204  1.00107.65     0.295 C 
+HETATM    7  C1  PGA A 581      11.650   6.107  -0.511  1.00107.78     0.198 C 
+HETATM    8  O1  PGA A 581      11.774   6.173  -1.743  1.00108.38    -0.646 OA
+HETATM    9  O2  PGA A 581      12.278   5.244   0.114  1.00107.74    -0.646 OA
+TORSDOF 3
+ENDMDL
